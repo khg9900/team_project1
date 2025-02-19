@@ -1,12 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>팀원 소개 - 김하경</title>
+
+    <!--부트스트랩-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gowun+Dodum&family=Jua&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Gowun+Dodum&family=Hahmlet:wght@100..900&family=Jua&family=Sigmar&display=swap');
+
+        * {
+            color: rgb(81, 81, 81);
+        }
+
+        .banner {
+            background-color: rgb(100, 149, 237);
+            height: 400px;
+            padding-top: 20px;
+        }
+
+        .banner_text {
+            margin-top: 50px;
+        }
+
+        .banner_text>p {
+            font-weight: bolder;
+            font-style: normal;
+            font-size: 80px;
+            color: white;
+            text-align: center;
+            line-height: 110%;
+            letter-spacing: -2px;
+        }
+
+        .main {
+            height: 3000px;
+            padding-top: 50px;
+            margin-bottom: 100px;
+        }
+        .about {
+            width: 1200px;
+            margin: 30px auto 100px auto;
+        }
+
+        .about_text {
+            font-weight: 400;
+            font-style: normal;
+            color: rgb(100, 149, 237);
+            text-align: center;
+            height: 130px;
+        }
+
+        .introduce {
+            height: 500px;
+            padding-top: 50px;
+            margin-top: 10px;
+        }
+
+        .my_img {
+            margin-left: 80px;
+            width: 350px;
+            height: 400px;
+            background-color: lightgray;
+            float: left;
+        }
+
+        .intro_text {
+            margin-left: 85px;
+            height: 400px;
+            float: left;
+            display: flex;
+            align-items: center;
+        }
+
+        .intro_text_1 {
+            margin-left: 30px;
+            float: left;
+            font-size: 30px;
+            text-align: center;
+            line-height: 250%;
+        }
+
+        .intro_text_2 {
+            margin-left: 50px;
+            margin-bottom: 6px;
+            float: left;
+            font-size: 30px;
+            line-height: 250%;
+
+        }
+
+        .tag_button {
+            width: 120px;
+            height: 55px;
+            margin-right: 20px;
+            margin-top: 10px;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            float: left;
+            background-color: rgb(100, 149, 237);
+            border: none;
+            font-family: 'Do Hyeon', serif;
+            font-size: 30px;
+        }
+
+        .tag_1 {
+            height: 700px;
+            margin-top: 20px;
+            padding-top: 25px;
+            font-family: 'Do Hyeon', serif;
+            font-size: 30px;
+
+        }
+
+        .tag_1>div {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 70px;
+
+        }
+
+        .img_comment {
+            float: left;
+            font-size: 30px;
+            text-align: center;
+            width: 650px;
+            height: 250px;
+            margin-left: 50px;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer {
+            height: 200px;
+            text-align: center;
+        }
+
+        .topbutton {
+            height: 50px;
+            margin-top: 50px;
+            padding: 7px;
+        }
+
+    </style>
+
 </head>
+
 <body>
-    <h1>팀원 상세 페이지 입니다.</h1>
+
+    <!--내비게이션 바-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Project</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="team_introduce.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Talk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team Notion</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Members
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">hagyeong</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="banner">
+        <div class="banner_text">
+            <p>안녕하세요! <br>
+                성장하는 개발자가 되고 싶은<br>
+                OOO입니다.</p>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="about">
+            <div class="about_text">
+                <p style="font-family: 'Sigmar', serif; font-size: 70px; color: rgb(100, 149, 237)">ABOUT</p>
+            </div>
+
+            <div class="introduce">
+                <div class="my_img">
+
+                </div>
+                <div class="intro_text">
+                    <div class="intro_text_1">
+                        <div style="font-family: 'Sigmar', serif;">NAME</div>
+                        <div style="font-family: 'Sigmar', serif;">AGE</div>
+                        <div style="font-family: 'Sigmar', serif;">MBTI</div>
+                        <div style="font-family: 'Sigmar', serif;"> TAG</div>
+                    </div>
+
+                    <div class="intro_text_2" style="font-family: 'Do Hyeon', serif;">
+                        <div>OOO</div>
+                        <div>OO</div>
+                        <div>OOOO</div>
+                        <div>
+                            <button class="tag_button" style="background-color: rgb(255, 116, 116); color: white;">tag1</button>
+                            <button class="tag_button" style="background-color: rgb(169, 240, 145); color: white;">tag2</button>
+                            <button class="tag_button" style="background-color: rgb(255, 232, 119); color: white;"> tag3</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="tag_1">
+                <div><button class="tag_button" style="float: none; background-color: rgb(255, 116, 116); color: white;">tag1</button></div>
+                <div style="text-align: center;">tag1에 관련된 내용입니다. <br> 여러 줄을 작성해 주세요. <br> 내용이 많아야 자연스러워 보입니다.</div>
+                <div class="my_img" style="height: 250px;"> </div>
+                <div class="img_comment"> 이미지에 대한 간단한 설명입니다. </div>
+            </div>
+            <div class="tag_1">
+                <div><button class="tag_button" style="float: none; background-color: rgb(169, 240, 145); color: white;">tag2</button></div>
+                <div style="text-align: center;">tag2에 관련된 내용입니다. <br> 여러 줄을 작성해 주세요. <br> 내용이 많아야 자연스러워 보입니다.</div>
+                <div class="img_comment"> 이미지에 대한 간단한 설명입니다. </div>
+                <div class="my_img" style="height: 250px;"> </div>
+            </div>
+            <div class="tag_1">
+                <div><button class="tag_button" style="float: none; background-color: rgb(255, 232, 119); color: white;">tag3</button></div>
+                <div style="text-align: center;">tag3에 관련된 내용입니다. <br> 여러 줄을 작성해 주세요. <br> 내용이 많아야 자연스러워 보입니다.</div>
+                <div class="my_img"> </div>
+                <div class="my_img" style="margin-left: 30px;"> </div>
+                <div class="my_img" style="margin-left: 30px;"> </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
+
+<footer>
+    <div class="footer">
+        <div>
+            <h2 style="font-family: 'Do Hyeon', serif;">감사합니다.</h2>
+        </div>
+        
+        <div class="topbutton">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" class="bi bi-arrow-up-circle-fill" style ="fill:rgb(100, 149, 237)" viewBox="0 0 16 16" onclick="topMove()">
+                <path
+                    d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
+            </svg>
+        </div>
+    </div>
+</footer>
+
+
 </html>
