@@ -1,0 +1,48 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+
+.slide_wrapper {
+    position: relative;
+    width: 1080px;
+    margin: 0 auto;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: left 0.5s ease-out;
+    padding-left: 0;
+}
+
+.slides li:not(:last-child) {
+    float: left;
+    margin-right: 15px;
+}
+
+.slides>li>img {
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.controls {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.controls span {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
