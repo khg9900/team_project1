@@ -37,9 +37,7 @@
     <script type="module">
         // Firebase SDK 라이브러리 가져오기
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
-        import { getFirestore } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
-        import { collection, addDoc } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
-        import { getDocs } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+        import { getFirestore, collection, addDoc, getDocs, query, orderBy, serverTimestamp} from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
 
         // For Firebase JS SDK v7.20.0 and later, measurementId is optional
         const firebaseConfig = {
@@ -63,25 +61,31 @@
             let doc = {
                 'name': name,
                 'text': text,
+                'timestamp': serverTimestamp()
             };
             await addDoc(collection(db, "guestbook"), doc);
             alert('저장 완료!');
             window.location.reload();
         })
-
-        let docs = await getDocs(collection(db, "guestbook"));
+        //firestore db 데이터 읽기 , 시간순서대로(timestamp) 정렬(orderby) 오름차순(asc) 내림차순(desc)
+        const q = query(collection(db, "guestbook"), orderBy('timestamp', 'desc'));
+        let docs = await getDocs(q);
         docs.forEach((doc) => {
             let row = doc.data();
 
             let name = row['name']
             let text = row['text']
-
+            let timestamp = row['timestamp'] ? row['timestamp'].toDate().toLocaleString() : '알 수 없음';
+            // 3항 연산자로 row['timestamp']가 존재한다면? row['timestamp'].toDate().toLocaleString() 을 실행 / 존재하지 않을 시 '알 수 없음' 실행
+            // firestore의 timestamp 객체는 바로 Date 형식으로 변환 불가 따라서 toDate() 메서드를 사용해서 timestamp를 js 객체로 변환
+            // date 객체의 toLocaleString() 메서드는 해당 날짜와 시간을 사람이 읽기 쉬운 현지화된 문자열로 변환
             let temp_html = `
             <div class="col-12">
                 <div class="card" style="margin-bottom: 3px; border: 2px solid rgb(100, 149, 237);"> 
                     <div class="card-body">
                         <h4 class="card-title">${name}</h4>
                         <p class="card-text">${text}</p>
+                        <small class="text-muted">${timestamp}</small> 
                     </div>
                 </div>
             </div>`
