@@ -156,12 +156,8 @@
             align-items: center;
         }
 
-        .footer {
-            height: 200px;
-            text-align: center;
-        }
-
         .topbutton {
+            text-align: center;
             height: 50px;
             margin-top: 50px;
             padding: 7px;
@@ -221,10 +217,10 @@
                             Members
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">JEONGYEON</a></li>
+                            <li><a class="dropdown-item" href="jeongyeon.html">JEONGYEON</a></li>
                             <li><a class="dropdown-item" href="hagyeong.html">HAGYEONG</a></li>
-                            <li><a class="dropdown-item" href="hagyeong.html">HYEONGJIN</a></li>
-                            <li><a class="dropdown-item" href="#">EUNHYE</a></li>
+                            <li><a class="dropdown-item" href="hyeongjin.html">HYEONGJIN</a></li>
+                            <li><a class="dropdown-item" href="eunhye.html">EUNHYE</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -275,22 +271,22 @@
                 </div>
             </div>
 
-            <div class="tag_1" id="tag1-section" onclick="scrollToSection('tags')">
-                <div><button class="tag_button"
+            <div class="tag_1" id="tag1-section">
+                <div><button class="tag_button" onclick="scrollToSection('tags')"
                         style="float: none; background-color: rgb(255, 116, 116); color: white;">tag1</button></div>
                 <div style="text-align: center;">tag1에 관련된 내용입니다. <br> 여러 줄을 작성해 주세요. <br> 내용이 많아야 자연스러워 보입니다.</div>
                 <div class="my_img" style="height: 250px;"> </div>
                 <div class="img_comment"> 이미지에 대한 간단한 설명입니다. </div>
             </div>
-            <div class="tag_1" id="tag2-section" onclick="scrollToSection('tags')">
-                <div><button class="tag_button"
+            <div class="tag_1" id="tag2-section">
+                <div><button class="tag_button" onclick="scrollToSection('tags')"
                         style="float: none; background-color: rgb(169, 240, 145); color: white;">tag2</button></div>
                 <div style="text-align: center;">tag2에 관련된 내용입니다. <br> 여러 줄을 작성해 주세요. <br> 내용이 많아야 자연스러워 보입니다.</div>
                 <div class="img_comment"> 이미지에 대한 간단한 설명입니다. </div>
                 <div class="my_img" style="height: 250px;"> </div>
             </div>
-            <div class="tag_1" id="tag3-section" onclick="scrollToSection('tags')">
-                <div><button class="tag_button"
+            <div class="tag_1" id="tag3-section">
+                <div><button class="tag_button" onclick="scrollToSection('tags')"
                         style="float: none; background-color: rgb(255, 232, 119); color: white;">tag3</button></div>
                 <div style="text-align: center;">tag3에 관련된 내용입니다. <br> 여러 줄을 작성해 주세요. <br> 내용이 많아야 자연스러워 보입니다.</div>
                 <div class="slide_wrapper">
@@ -429,20 +425,13 @@
 </body>
 
 <footer>
-    <div class="footer">
-        <div>
-            <h2 style="font-family: 'Do Hyeon', serif;">감사합니다.</h2>
-        </div>
-
-        <div class="topbutton">
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" class="bi bi-arrow-up-circle-fill"
-                style="fill:rgb(100, 149, 237)" viewBox="0 0 16 16" onclick="topMove()">
-                <path
-                    d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
-            </svg>
-        </div>
+    <div class="topbutton">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" class="bi bi-arrow-up-circle-fill"
+            style="fill:rgb(100, 149, 237)" viewBox="0 0 16 16" onclick="topMove()">
+            <path
+                d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
+        </svg>
     </div>
 </footer>
-
 
 </html>
