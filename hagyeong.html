@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="slider_style.css" />
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gowun+Dodum&family=Jua&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Gowun+Dodum&family=Hahmlet:wght@100..900&family=Jua&family=Sigmar&display=swap');
 
         /* 스크롤바 안보이게 */
@@ -79,6 +78,12 @@
             height: 400px;
             background-color: lightgray;
             float: left;
+        }
+
+        .my_img img {
+            width: 350px;
+            height: 400px;
+            object-fit: cover;
         }
 
 
@@ -157,9 +162,12 @@
         }
 
         .topbutton {
-            height: 50px;
-            margin-top: 50px;
-            padding: 7px;
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            width: 45px;
+            height: 45px;
+            opacity: .6;
         }
 
         .progress-container {
@@ -243,7 +251,7 @@
 
             <div class="introduce">
                 <div class="my_img">
-
+                    <img src="image/cat3.jpeg">
                 </div>
                 <div class="intro_text">
                     <div class="intro_text_1">
@@ -274,7 +282,8 @@
                 <div><button class="tag_button"
                         style="float: none; background-color: rgb(255, 116, 116); color: white;">tag1</button></div>
                 <div style="text-align: center;">tag1에 관련된 내용입니다. <br> 여러 줄을 작성해 주세요. <br> 내용이 많아야 자연스러워 보입니다.</div>
-                <div class="my_img" style="height: 250px;"> </div>
+                <div class="my_img" style="height: 250px;"> <img style="width: 350px; height: 250px;"
+                        src="image/cat.jpeg"> </div>
                 <div class="img_comment"> 이미지에 대한 간단한 설명입니다. </div>
             </div>
             <div class="tag_1" id="tag2-section">
@@ -282,7 +291,8 @@
                         style="float: none; background-color: rgb(169, 240, 145); color: white;">tag2</button></div>
                 <div style="text-align: center;">tag2에 관련된 내용입니다. <br> 여러 줄을 작성해 주세요. <br> 내용이 많아야 자연스러워 보입니다.</div>
                 <div class="img_comment"> 이미지에 대한 간단한 설명입니다. </div>
-                <div class="my_img" style="height: 250px;"> </div>
+                <div class="my_img" style="height: 250px;"> <img style="width: 350px; height: 250px;"
+                        src="image/cat.jpeg"> </div>
             </div>
             <div class="tag_1" id="tag3-section">
                 <div><button class="tag_button"
@@ -379,7 +389,7 @@
             }
         });
     </script>
-    <!--프로그래스 바-->
+    <!--프로그래스 바, 상단 이동, 새로고침-->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             // 프로그래스 바 엘리먼트
@@ -400,6 +410,7 @@
             });
         });
 
+        // 스크롤 버튼
         function topMove() {
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
@@ -415,7 +426,7 @@
 
     </script>
 
-    
+    <!--tag 이동-->
     <script>
         function scrollToSection(sectionId) {
             document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
@@ -434,7 +445,7 @@
             <h2 style="font-family: 'Do Hyeon', serif;">감사합니다.</h2>
         </div>
 
-        <div class="topbutton">
+        <div class="topbutton" id="topBtn">
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" class="bi bi-arrow-up-circle-fill"
                 style="fill:rgb(100, 149, 237)" viewBox="0 0 16 16" onclick="topMove()">
                 <path
