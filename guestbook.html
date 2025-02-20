@@ -67,7 +67,7 @@
             alert('저장 완료!');
             window.location.reload();
         })
-        //firestore db 데이터 읽기 , 시간순서대로(timestamp) 정렬(orderby) 오름차순(asc)
+        //firestore db 데이터 읽기 , 시간순서대로(timestamp) 정렬(orderby) 오름차순(asc) 내림차순(desc)
         const q = query(collection(db, "guestbook"), orderBy('timestamp', 'desc'));
         let docs = await getDocs(q);
         docs.forEach((doc) => {
