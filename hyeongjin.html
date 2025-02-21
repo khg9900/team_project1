@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>팀원 소개 - 김하경</title>
+    <title>팀원 소개 - 이형진</title>
 
     <!--부트스트랩-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -16,6 +16,8 @@
         </script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="slider_style.css" />
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Gowun+Dodum&family=Hahmlet:wght@100..900&family=Jua&family=Sigmar&display=swap');
@@ -39,14 +41,15 @@
         .banner_text {
             margin-top: 50px;
         }
+        
 
         .banner_text>p {
             font-weight: bolder;
             font-style: normal;
-            font-size: 80px;
+            font-size: 70px;
             color: white;
             text-align: center;
-            line-height: 110%;
+            line-height: 120%;
             letter-spacing: -2px;
         }
 
@@ -54,15 +57,12 @@
             color:#0d6efd;
         }
 
-<<<<<<< HEAD
-=======
         .main {
-            height: 3200px;
+            height: 3000px;
             padding-top: 50px;
-            margin-bottom: 50px;
+            margin-bottom: 100px;
         }
 
->>>>>>> c1513e8d0c8003a307c50b31a8c0e9c8b1e182d1
         .about {
             width: 1200px;
             margin: 30px auto 100px auto;
@@ -86,20 +86,18 @@
             margin-left: 80px;
             width: 350px;
             height: 400px;
-            background-color: lightgray;
+            background-color: rgba(255, 255, 255, 0);
             float: left;
+            border: solid;
+            align-content: center;
         }
 
-<<<<<<< HEAD
-=======
         .my_img img {
-            width: 350px;
-            height: 400px;
-            object-fit: cover;
+            width: 100%;
+            object-fit:contain;
         }
 
 
->>>>>>> c1513e8d0c8003a307c50b31a8c0e9c8b1e182d1
         .intro_text {
             margin-left: 85px;
             height: 400px;
@@ -143,8 +141,8 @@
         }
 
         .tag_1 {
-            height: 750px;
-            margin-top: 30px;
+            height: 700px;
+            margin-top: 20px;
             padding-top: 25px;
             font-family: 'Do Hyeon', serif;
             font-size: 30px;
@@ -172,7 +170,6 @@
         .footer {
             height: 200px;
             text-align: center;
-            margin-top: 100px;
         }
 
         .topbutton {
@@ -183,8 +180,6 @@
             height: 45px;
             opacity: .6;
         }
-<<<<<<< HEAD
-=======
 
         .progress-container {
             width: 100%;
@@ -204,7 +199,6 @@
             width: 0;
             transition: 0.15s;
         }
->>>>>>> c1513e8d0c8003a307c50b31a8c0e9c8b1e182d1
     </style>
 
 </head>
@@ -254,9 +248,9 @@
 
     <div class="banner">
         <div class="banner_text">
-            <p>안녕하세요! <br>
-                끊임없이 성장하는 개발자를<br>꿈꾸는
-                김하경입니다.</p>
+            <p>좋은 날입니다. 프렌드. <br>
+                여기는 심심한 자기소개고<br>
+                저는 이형진입니다.</p>
         </div>
     </div>
 
@@ -268,7 +262,7 @@
 
             <div class="introduce">
                 <div class="my_img">
-                    <img src="image/hagyeong.png">
+                    <img src="./image/comedy-156776_1280.png">
                 </div>
                 <div class="intro_text">
                     <div class="intro_text_1">
@@ -279,29 +273,16 @@
                     </div>
 
                     <div class="intro_text_2" style="font-family: 'Do Hyeon', serif;">
-<<<<<<< HEAD
-                        <div>OOO</div>
-                        <div>OO</div>
-                        <div>OOOO</div>
-                        <div>
-                            <button class="tag_button" onclick="scrollToSection('tag1-section')"
-                                style="background-color: rgb(255, 116, 116); color: white;">tag1</button>
-                            <button class="tag_button" onclick="scrollToSection('tag2-section')"
-                                style="background-color: rgb(169, 240, 145); color: white;">tag2</button>
-                            <button class="tag_button" onclick="scrollToSection('tag3-section')"
-                                style="background-color: rgb(255, 232, 119); color: white;">tag3</button>
-=======
-                        <div>김하경</div>
-                        <div>26</div>
-                        <div>INFP</div>
+                        <div>이형진</div>
+                        <div>25</div>
+                        <div>INTP</div>
                         <div id="tags">
                             <button class="tag_button" onclick="scrollToSection('tag1-section')"
-                                style="background-color: rgb(255, 116, 116); color: white;">전공</button>
+                                style="background-color: rgb(255, 116, 116); color: white;">참가계기</button>
                             <button class="tag_button" onclick="scrollToSection('tag2-section')"
-                                style="background-color: rgb(169, 240, 145); color: white;">성격</button>
+                                style="background-color: rgb(96, 154, 76); color: white;">이번 일</button>
                             <button class="tag_button" onclick="scrollToSection('tag3-section')"
-                                style="background-color: rgb(255, 232, 119); color: white;">TMI</button>
->>>>>>> c1513e8d0c8003a307c50b31a8c0e9c8b1e182d1
+                                style="background-color: rgb(250, 219, 66); color: white;">이후?</button>
                         </div>
                     </div>
 
@@ -309,107 +290,34 @@
             </div>
 
             <div class="tag_1" id="tag1-section">
-<<<<<<< HEAD
-                <div><button class="tag_button"
-                        style="float: none; background-color: rgb(255, 116, 116); color: white;">tag1</button></div>
-                <div style="text-align: center;">tag1에 관련된 내용입니다. <br> 여러 줄을 작성해 주세요. <br> 내용이 많아야 자연스러워 보입니다.</div>
-                <div class="my_img" style="height: 250px;"> </div>
-                <div class="img_comment"> 이미지에 대한 간단한 설명입니다. </div>
-            </div>
-            <div class="tag_1" id="tag2-section">
-                <div><button class="tag_button"
-                        style="float: none; background-color: rgb(169, 240, 145); color: white;">tag2</button></div>
-                <div style="text-align: center;">tag2에 관련된 내용입니다. <br> 여러 줄을 작성해 주세요. <br> 내용이 많아야 자연스러워 보입니다.</div>
-                <div class="img_comment"> 이미지에 대한 간단한 설명입니다. </div>
-                <div class="my_img" style="height: 250px;"> </div>
-            </div>
-            <div class="tag_1" id="tag3-section">
-                <div><button class="tag_button"
-                        style="float: none; background-color: rgb(255, 232, 119); color: white;">tag3</button></div>
-                <div style="text-align: center;">tag3에 관련된 내용입니다. <br> 여러 줄을 작성해 주세요. <br> 내용이 많아야 자연스러워 보입니다.</div>
-                <div class="my_img"> </div>
-                <div class="my_img" style="margin-left: 30px;"> </div>
-                <div class="my_img" style="margin-left: 30px;"> </div>
-=======
                 <div><button class="tag_button" onclick="scrollToSection('tags')"
-                        style="float: none; background-color: rgb(255, 116, 116); color: white;">전공</button></div>
-                <div style="text-align: center;">저는 어렸을때부터 도서관을 좋아해서 <br> 사서를 꿈꾸며 문헌정보학과에 진학했습니다. <br> 그러다 우연히 전공 선택 과목에서 python을 배우게 되었는데,
-                    <br>생각보다 너무 재미있어서 그대로 프로그래밍의 매력에 빠져버렸습니다!</div>
-                <div class="my_img" style="height: 250px;"> <img style="width: 350px; height: 250px;"
-                        src="image/ha_01.png"> </div>
-                <div class="img_comment"> 사서가 될 지, 개발자의 꿈을 키울지 고민하다 <br> 마음을 굳히고 부트캠프에 도전하게 되었습니다. <br> 웹개발은 이제 막 배우는 단계이지만 <br> 열심히 노력해서 능력있는 개발자가 되고싶어요! </div>
-            </div>
-            <div class="tag_1" id="tag2-section">
-                <div><button class="tag_button" onclick="scrollToSection('tags')"
-                        style="float: none; background-color: rgb(169, 240, 145); color: white;">성격</button></div>
-                <div style="text-align: center;">어렸을 때는 소심하고 낯을 많이 가렸었는데, <br> 도서관에서 아르바이트를 하면서 사람을 많이 만나서 그런지 <br> 긍정적이고 자신감있는 성격으로 바뀐 것 같아요! <br>
-                    저와 같은 팀이 되신다면 적극적으로 프로젝트에 참여하는 <br> 아주 이상적인 팀원을 보게되실 거예요 ㅎㅎ</div>
-                <div class="img_comment"> 하지만 아무래도 I 이기 때문에  말을 너무 많이 하면 <br> 재충전의 시간이 조금 필요할 수도 있어요.. <br> 그래도 충전이 끝나면 원래대로 돌아오니 <br> 걱정하지 않으셔도 됩니다!</div>
-                <div class="my_img" style="height: 250px;"> <img style="width: 350px; height: 250px;"
-                        src="image/ha_02.png"> </div>
-            </div>
-            <div class="tag_1" id="tag3-section">
-                <div><button class="tag_button" onclick="scrollToSection('tags')"
-                        style="float: none; background-color: rgb(255, 232, 119); color: white;">TMI</button></div>
-                <div style="text-align: center;">저의 활력소인 고양이들을 소개합니다! <br> 저는 이제 1살이 조금 넘은 고양이 두 마리와 함께 지내고 있어요. <br> 
-                    고양이를 기르고 있거나, 좋아하는 분들의 연락은 언제든지 환영입니다!</div>
-                <div class="slide_wrapper">
-                    <ul class="slides">
-                        <li>
-                            <img src="image/cat1.jpeg">
-                        </li>
-                        <li>
-                            <img src="image/cat2.jpeg">
-                        </li>
-                        <li>
-                            <img src="image/cat3.jpeg">
-                        </li>
-                        <li>
-                            <img src="image/cat4.jpeg">
-                        </li>
-                        <li>
-                            <img src="image/cat5.jpeg">
-                        </li>
-                        <li>
-                            <img src="image/cat6.jpeg">
-                        </li>
-                        <li>
-                            <img src="image/cat7.jpeg">
-                        </li>
-                        <li>
-                            <img src="image/cat8.jpeg">
-                        </li>
-                        <li>
-                            <img src="image/cat9.jpeg">
-                        </li>
-                        <li>
-                            <img src="image/cat10.jpeg">
-                        </li>
-                    </ul>
-                    <div class="controls">
-                        <div class="control_prev">
-                            <i class="bi bi-caret-left-square prev" style="color:white;"></i>
-                        </div>
-                        <div class="control_next">
-                            <i class="bi bi-caret-right-square next" style="color:white;"></i>
-                        </div>
->>>>>>> c1513e8d0c8003a307c50b31a8c0e9c8b1e182d1
-
-                    </div>
+                        style="float: none; background-color: rgb(255, 116, 116); color: white;">참가계기</button></div>
+                <div style="text-align: center;">군대를 전역하고 갈수록 귀찮아지는 만사에<br>이거 안되겠다. 뭐가 됐든 해야겠다!<br> 이 참에 빡세게 해보자!
                 </div>
+                <div style="text-align: center;">조 이름 '전우조' 가 저의 뜻은 아니었으나<br>이 또한 운명 아니겠습니까.<br>일단 함 해보입시다. 마!
+                </div>
+            </div>
+            <div class="tag_1" id="tag2-section">
+                <div><button class="tag_button" onclick="scrollToSection('tags')"
+                        style="float: none; background-color: rgb(96, 154, 76); color: white;">이번 일</button></div>
+                <div style="text-align: center;">위에 외친게 무색하지만, 뭘 많이 하진 않았습니다.<br> 메인으로 한 것은 팀 노션 정리, utterances 추가.</div>
+                <div style="text-align: center;">그 외에는 자잘한 작업들?<br>오류 같이 잡아주고, 자잘한 문제 몇 개 찾아서 수정하고.<br>문서를 오래 보긴 봤는데 정작 나온건 없습니다. 헉</div>
+                <div style="text-align: center;">잘한다! 우리 조원들!! 믿고 있었다고!</div>
+            </div>
+            <div class="tag_1" id="tag3-section">
+                <div><button class="tag_button" onclick="scrollToSection('tags')"
+                        style="float: none; background-color: rgb(250, 219, 66); color: white;">이후?</button></div>
+                <div style="text-align: center;">일단 기본기부터,<br>JS, HTML, Kotlin 등 튜토리얼 문서들 독파에 도전.</div>
+                <div style="text-align: center;">flex고 jekyll이고, 최신기술도 일단 이해해야 써먹는거니까...<br>찾아볼 때는 찾아보더라도<br>그런게 존재한다. 그렇게 가능하다. 정도는 알아야지 않겠습니까.</div>
+                <div style="text-align: center;">이 짧은 시간에 그 방대한 문서들을 다 이해할 수 있다고 생각하진 않습니다.<br>내가 만족할 수 있는 만큼은. 막히지 않을 정도로는 익히고 싶습니다.</div>
+                <div style="text-align: center;">미묘하지만 제게는 긴장되는 목표입니다. <br>읽어야지, 읽어야지, 생각만 하지 여태 읽지를 않았어서.<br>성공할 수 있겠죠? 있겠지? 해야지.</div>
+                <hr>
+                <div style="text-align: center;">이상, 여기가 문서의 끝입니다.<br>우리 웃으며 다시 만나요!</div>
             </div>
 
         </div>
     </div>
 
-<<<<<<< HEAD
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-        </script>
-    <script>
-        function scrollToSection(sectionId) {
-            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-=======
     <script src="https://utteranc.es/client.js" repo="le951/post" issue-term="pathname" theme="github-light"
         crossorigin="anonymous" async> </script>
 
@@ -430,15 +338,28 @@
         function moveSlide(num) {
             slides.style.left = -num * 365 + 'px';
             currentIdx = num;
->>>>>>> c1513e8d0c8003a307c50b31a8c0e9c8b1e182d1
         }
 
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
+        nextBtn.addEventListener('click', function () {
+
+            // 3개의 이미지가 들어가기 때문에 -2 만큼 더 빼줌.
+            if (currentIdx < slideCount - 3) {
+                moveSlide(currentIdx + 1);
+            } else {
+                moveSlide(0)
+            }
+        });
+
+        prevBtn.addEventListener('click', function () {
+
+            // 3개의 이미지가 들어가기 때문에 -2 만큼 더 빼줌.
+            if (currentIdx > 0) {
+                moveSlide(currentIdx - 1);
+            } else {
+                moveSlide(slideCount - 3)
+            }
+        });
     </script>
-<<<<<<< HEAD
-=======
     <!--프로그래스 바, 상단 이동, 새로고침-->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -487,20 +408,11 @@
         }
     </script>
 
->>>>>>> c1513e8d0c8003a307c50b31a8c0e9c8b1e182d1
 </body>
 
 <footer>
     <div class="footer">
-        <div>
-            <h2 style="font-family: 'Do Hyeon', serif;">감사합니다 :></h2>
-        </div>
-
-<<<<<<< HEAD
-        <div class="topbutton">
-=======
         <div class="topbutton" id="topBtn">
->>>>>>> c1513e8d0c8003a307c50b31a8c0e9c8b1e182d1
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" class="bi bi-arrow-up-circle-fill"
                 style="fill:rgb(100, 149, 237)" viewBox="0 0 16 16" onclick="topMove()">
                 <path
